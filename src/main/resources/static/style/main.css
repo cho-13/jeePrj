@@ -22,8 +22,8 @@ body {
 }
 
 #nav a:link,#nav a:hover,#nav a:visited{
-    color: black;
-    text-decoration: none;
+    color: darkblue;
+    text-decoration: brown;
 }
 .leftSide{
     height:100%;
@@ -31,20 +31,22 @@ body {
 }
 .content{
     height:100%;
-    /*background-color: red;*/
+    background-color: deepskyblue;
 }
 .leftSide a:link,.leftSide a:hover,.leftSide a:visited{
-    color: rgba(0, 0, 0, 0.90);
+    color: red;
     text-decoration: none;
 }
 .list-group a{
-    border-bottom: 1.1px solid rgba(109, 118, 126, 0.20) ;
+    border-bottom: 1.1px solid black ;
 }
 
 .list-group-item:hover , .list-group-item.active{
     background-color: rgba(0, 0, 0, 0.04);
     color: rgba(109, 118, 126, 0.90);
 }
+
+
 
 
 .table-row, .table-sm{

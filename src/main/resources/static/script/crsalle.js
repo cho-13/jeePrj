@@ -61,7 +61,7 @@ $(document)
                     success: function (data) {
                         var option = '';
                         data.forEach(e => {
-                            option += '<option value =' + e.id + '>' + e.type + '</option>';
+                            option += '<option value =' + e.id + '>' + e.code + '</option>';
                         });
 
                         $('#salle').append(option);

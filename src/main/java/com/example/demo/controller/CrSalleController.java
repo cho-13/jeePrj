@@ -1,16 +1,17 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.CrSalle;
-import com.example.demo.model.Produit;
 import com.example.demo.model.SalleCrenauKey;
 import com.example.demo.repository.CrSalleRepository;
 import com.example.demo.repository.CrenauxRepository;
-import com.example.demo.repository.ProduitRepository;
 import com.example.demo.repository.SalleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("crsalles")
@@ -47,10 +48,10 @@ public class CrSalleController {
 		CrSalle crs = crSalleRepository.findById(Long.parseLong(id));
 		crSalleRepository.delete(crs);
 	}
-	
+
 	@GetMapping(value = "/count")
 	public long count() {
 		return crSalleRepository.count();
 	}
-
+	
 }
