@@ -31,14 +31,6 @@ public class SalleController {
 
     @GetMapping(value = "/count")
     public long count() {
-         Users u1 = new Users();
-        Users u2 = new Users();
-        u1.setUsername("admin");
-        u1.setUsername("admin");
-        u2.setUsername("user");
-        u2.setUsername("user");
-        k.save(u1);
-        k.save(u2);
         return salleRepository.count();
     }
 
